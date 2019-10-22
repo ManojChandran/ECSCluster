@@ -9,12 +9,11 @@ data "aws_subnet_ids" "selected" {
 }
 
 resource "aws_alb" "tf_ecs-load-balancer" {
-  count = "${length(data.aws_subnet_ids.selected.ids)}"
   name  = "ecs-load-balancer"
-#    security_groups     = ["${aws_security_group.test_public_sg.id}"]
-  subnets             =  ["${data.aws_subnet_ids.selected.*.ids}"]
+#  security_groups     = ["${aws_security_group.test_public_sg.id}"]
+  subnets             =  ["${data.aws_subnet_ids.selected.ids}"]
 
-    tags {
-      Name = "ecs-load-balancer"
-    }
+  tags {
+    Name = "ecs-load-balancer"
+  }
 }
