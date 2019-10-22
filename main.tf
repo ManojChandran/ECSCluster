@@ -64,6 +64,13 @@ module "Flowlogs" {
 }
 # Deploy Security group
 module "SecurityGroup01" {
-  source       = "./modules/31_SecurityGroup1"
+  source       = "./modules/30_SecurityGroup1"
   vpc_id       = "${module.vpc_igw.vpc_id}"
+}
+
+#-----------newcode--------------
+# Deploy ECS Application load balancer
+module "ECSALBalancer" {
+  source       = "./modules/42_ECSALBalancer"
+  vpc_private_subnets_id       = "${module.PrivateSubnet.vpc_private_subnets}"
 }
