@@ -73,4 +73,5 @@ module "SecurityGroup01" {
 module "ECSALBalancer" {
   source       = "./modules/42_ECSALBalancer"
   vpc_id       = "${module.vpc_igw.vpc_id}"
+  module_depends_on   = ["${module.PrivateSubnet.vpc_private_subnets}"]
 }

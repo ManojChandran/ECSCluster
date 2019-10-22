@@ -42,3 +42,4 @@ variable "flowlogs_bucket_name" {
   default = ""
 }
 #-----newcode-----------
+variable module_depends_on { default = [], type = "list"}
