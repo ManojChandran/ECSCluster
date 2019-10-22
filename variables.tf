@@ -42,6 +42,4 @@ variable "flowlogs_bucket_name" {
   default = ""
 }
 #-----newcode-----------
-variable "vpc_private_subnets_id" {
-  default = ""
-}
+variable "vpc_private_subnets_id" []
