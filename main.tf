@@ -72,5 +72,5 @@ module "SecurityGroup01" {
 # Deploy ECS Application load balancer
 module "ECSALBalancer" {
   source       = "./modules/42_ECSALBalancer"
-  vpc_private_subnets_id       = "${module.PrivateSubnet.vpc_private_subnets}"
+  vpc_id       = "${module.vpc_igw.vpc_id}"
 }
