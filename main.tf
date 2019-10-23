@@ -72,6 +72,7 @@ module "SecurityGroup01" {
 # Deploy a ECS Cluster
 module "ECSCluster" {
   source       = "./modules/40_ECSCluster"
+  tf_ecs_cluster_name = "${var.vpc_id}-cluster"
 }
 
 # ECS Service role
