@@ -4,7 +4,7 @@ data "aws_subnet_ids" "selected" {
   vpc_id = "${var.vpc_id}"
   filter {
     name   = "tag:Name"
-    values = ["tf_private_*"]       # insert values here
+    values = ["tf_private_1", "tf_private_2", "tf_private_3", "tf_private_4", "tf_private_5"]
   }
 }
 
