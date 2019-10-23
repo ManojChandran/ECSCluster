@@ -75,4 +75,5 @@ module "ECSALBalancer" {
   vpc_id       = "${module.vpc_igw.vpc_id}"
   vpc_private_subnets_in = "${module.PrivateSubnet.vpc_private_subnets}"
   vpc_public_subnets_in = "${module.PublicSubnet.vpc_public_subnets}"
+  vpc_RDS_subnets_in = "${module.RDSSubnet.vpc_RDS_subnets}"
 }
