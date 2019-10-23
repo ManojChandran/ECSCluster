@@ -25,3 +25,6 @@ output "VPC IGW" {
 output "VPC Default Routetable" {
   value = "${module.vpc_igw.default_route_table_id}"
 }
+output "VPC Cluster ID" {
+  value = "${module.ECSCluster.ecs_cluster_id}"
+}

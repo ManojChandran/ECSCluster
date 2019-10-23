@@ -41,13 +41,3 @@ variable "vpc_rds_cidrs" {
 variable "flowlogs_bucket_name" {
   default = ""
 }
-#-----newcode-----------
-variable "vpc_private_subnets_in" {
-  default = ""
-}
-variable "vpc_public_subnets_in" {
-  default = ""
-}
-variable "vpc_RDS_subnets_in" {
-  default = ""
-}

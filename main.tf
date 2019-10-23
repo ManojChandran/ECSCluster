@@ -62,18 +62,24 @@ module "Flowlogs" {
   source       = "./modules/20_Flowlogs"
   vpc_id       = "${module.vpc_igw.vpc_id}"
 }
+
 # Deploy Security group
 module "SecurityGroup01" {
   source       = "./modules/30_SecurityGroup1"
   vpc_id       = "${module.vpc_igw.vpc_id}"
 }
 
-#-----------newcode--------------
-# Deploy ECS Application load balancer
-module "ECSALBalancer" {
-  source       = "./modules/42_ECSALBalancer"
-  vpc_id       = "${module.vpc_igw.vpc_id}"
-  vpc_private_subnets_in = "${module.PrivateSubnet.vpc_private_subnets}"
-  vpc_public_subnets_in = "${module.PublicSubnet.vpc_public_subnets}"
-  vpc_RDS_subnets_in = "${module.RDSSubnet.vpc_RDS_subnets}"
+# Deploy a ECS Cluster
+module "ECSCluster" {
+  source       = "./modules/40_ECSCluster"
+}
+
+# ECS Service role
+module "ECSServiceRole" {
+  source       = "./modules/41_ECSServiceRole"
+}
+
+# ECS Instance role
+module "ECSInstanceRole" {
+  source       = "./modules/42_ECSInstanceRole"
 }
