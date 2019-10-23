@@ -45,3 +45,6 @@ variable "flowlogs_bucket_name" {
 variable "vpc_private_subnets_in" {
   default = ""
 }
+variable "vpc_public_subnets_in" {
+  default = ""
+}
