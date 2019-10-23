@@ -42,4 +42,6 @@ variable "flowlogs_bucket_name" {
   default = ""
 }
 #-----newcode-----------
-variable module_depends_on { default = [], type = "list"}
+variable "vpc_private_subnets_in" {
+  default = ""
+}
