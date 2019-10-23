@@ -35,7 +35,7 @@ resource "aws_route_table_association" "tf_public_assoc" {
 
 # Create application load balancer and attach it to private Subnet.
 resource "aws_alb" "tf_ecs_load_balancer" {
-    name                = "tf_ecs_load_balancer"
+    name                = "tf-ecs-load-balancer"
 #    security_groups     = ["${aws_security_group.test_public_sg.id}"]
     subnets             = ["${aws_subnet.tf_private_subnet.*.id}"]
 
@@ -45,7 +45,7 @@ resource "aws_alb" "tf_ecs_load_balancer" {
 }
 
 resource "aws_alb_target_group" "tf_ecs_target_group" {
-    name                = "tf_ecs_target_group"
+    name                = "tf-ecs-target-group"
     port                = "80"
     protocol            = "HTTP"
     vpc_id              = "${var.vpc_id}"
