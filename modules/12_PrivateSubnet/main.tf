@@ -21,7 +21,7 @@ resource "aws_subnet" "tf_private_subnet" {
   availability_zone       = "${data.aws_availability_zones.available.names[count.index]}"
 
   tags {
-    Name = "tf_private_${count.index + 1}"
+    Name = "tf_private_tag_${count.index + 1}"
   }
 }
 
