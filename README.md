@@ -72,6 +72,7 @@ We assume current tenant fall in three categories as mentioned below.
 
 ### Metering, Metrics and Analysis
 need to work on, any suggestion /guideline /learning shared will be helpful
+
 ### Management & monitoring
 Management and monitoring is key, we start with implementing VPC flow logs.
 
