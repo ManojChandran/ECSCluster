@@ -131,3 +131,4 @@ Link 7 : https://www.youtube.com/watch?v=mwQ5lipGTBI&t=781s (Title: AWS re:Inven
 Link 8 : https://github.com/terraform-community-modules/tf_aws_ecs/blob/master/main.tf</br>
 Link 9 : https://learn.hashicorp.com/terraform/aws/lambda-api-gateway</br>
 Link 10 : http://blog.shippable.com/setup-a-container-cluster-on-aws-with-terraform-part-2-provision-a-cluster</br>
+Link 11 : https://www.gruntwork.io/devops-checklist/</br>
