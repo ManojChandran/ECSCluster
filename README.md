@@ -80,8 +80,10 @@ Our solution Terraform modules:
 
 ### Billing
 need to work on, any suggestion /guideline /learning shared will be helpful
+
 ### Deployment & agility
 need to work on, any suggestion /guideline /learning shared will be helpful
+
 # Proposed solution
 All the components have been created individual Terraform Modules. Assuming Tenant category and applying mapping, we can control the resources creation and allocation.
 
