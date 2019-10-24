@@ -58,6 +58,7 @@ Second step in the process is Tenant isolation, there are several levels of isol
 * Model #5 – Tenant Isolation at the Application Layer
 
 Our approach is to divide the tenants in to multiple tier and use a VPC layer Isolation.
+
 ![Design](./images/TenantIsolation.png?raw=true "Title")</br>
 
 ### Tenant Tier
