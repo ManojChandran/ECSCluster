@@ -70,7 +70,7 @@ We assume current tenant fall in three categories as mentioned below.
 * Tenant3 - Professional Tier (Single region, Multi AZ, Isolated Multi AZ database)
 * Tenant4 - Premium Tier (Multi region)
 
-```
+```hcl
 #----root/variables.tf----- Sample approach
 variable "tenantTier" {
   description = "tenantTier: Tenant1 or Tenant2 or Tenant3 or Tenant4"
