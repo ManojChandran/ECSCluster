@@ -70,12 +70,25 @@ We assume current tenant fall in three categories as mentioned below.
 * Tenant3 - Professional Tier (Single region, Multi AZ, Isolated Multi AZ database)
 * Tenant4 - Premium Tier (Multi region)
 
-
 ```
-#----root/variables.tf-----
+#----root/variables.tf----- Sample approach
 variable "tenantTier" {
   description = "tenantTier: Tenant1 or Tenant2 or Tenant3 or Tenant4"
 }
+
+....
+
+variable "vpc_public_subnet_count" {
+  type        = "map"
+  description = "Subnet count"
+  default     = {
+    Tenant1  = "2"
+    Tenant2  = "4"
+    Tenant3  = "6"
+    Tenant4  = "8"
+  }
+}
+
 ```
 
 ### Metering, Metrics and Analysis
