@@ -23,7 +23,9 @@ Designing SAAS infrastructure means, we are going to create a multi-tenant archi
 
 ### Architect Requirements
 
-Key steps and consideration in designing are: ![SAAS Requirements](./images/Architecting_requirement.png?raw=true "Title")
+![SAAS Requirements](./images/Architecting_requirement.png?raw=true "Title")
+
+Key steps and consideration in designing are:
 
 * Tenant on-boarding
 * Tenant Isolation
