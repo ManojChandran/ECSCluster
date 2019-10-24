@@ -106,7 +106,6 @@ variable "vpc_public_subnet_count" {
 
 ```
 
-
 # Deliverables
 
 ### Network Diagram/ Design
