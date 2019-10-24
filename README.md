@@ -117,7 +117,7 @@ variable "vpc_public_subnet_count" {
 
 ### Configuration management
 
-Github Link for solution (https://github.com/ManojChandran/mySaaSinAWS.git)
+Github Link for solution (https://github.com/ManojChandran/ECSCluster.git)
 
 # Project Reference
 
