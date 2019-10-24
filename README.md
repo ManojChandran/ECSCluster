@@ -21,6 +21,10 @@ A method of software delivery and licensing in which software is accessed online
 
 Designing SAAS infrastructure means, we are going to create a multi-tenant architecture. Each tenant will have different privilege, access and data isolation.
 
+### Architect Requirements
+
+![SAAS Requirements](./images/Architecting_requirement.png?raw=true "Title")
+
 Key steps and consideration in designing are:
 
 * Tenant on-boarding
