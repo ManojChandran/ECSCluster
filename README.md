@@ -70,6 +70,21 @@ We assume current tenant fall in three categories as mentioned below.
 * Tenant3 - Professional Tier (Single region, Multi AZ, Isolated Multi AZ database)
 * Tenant4 - Premium Tier (Multi region)
 
+### Metering, Metrics and Analysis
+need to work on, any suggestion /guideline /learning shared will be helpful
+### Management & monitoring
+Management and monitoring is key, we start with implementing VPC flow logs.
+
+Our solution Terraform modules:
+* 20_Flowlogs
+
+### Billing
+need to work on, any suggestion /guideline /learning shared will be helpful
+### Deployment & agility
+need to work on, any suggestion /guideline /learning shared will be helpful
+# Proposed solution
+All the components have been created individual Terraform Modules. Assuming Tenant category and applying mapping, we can control the resources creation and allocation.
+
 ```hcl
 #----root/variables.tf----- Sample approach
 variable "tenantTier" {
@@ -91,26 +106,6 @@ variable "vpc_public_subnet_count" {
 
 ```
 
-### Metering, Metrics and Analysis
-need to work on, any suggestion /guideline /learning shared will be helpful
-### Management & monitoring
-Management and monitoring is key, we start with implementing VPC flow logs.
-
-Our solution Terraform modules:
-* 20_Flowlogs
-
-### Billing
-need to work on, any suggestion /guideline /learning shared will be helpful
-### Deployment & agility
-need to work on, any suggestion /guideline /learning shared will be helpful
-# Proposed solution
-All the components have been created individual Terraform Modules. Assuming Tenant category and applying mapping, we can control the resources creation and allocation.
-
-```hcl
-variable "tenantTier" {
-  description = "tenantTier: Tenant1 or Tenant2 or Tenant3 or Tenant4"
-}
-```
 
 # Deliverables
 
