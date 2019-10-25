@@ -131,28 +131,7 @@ Link 3 : https://www.terraform.io/docs/providers/aws/r/s3_bucket.html</br>
 Link 4 : https://gist.github.com/nagelflorian/67060ffaf0e8c6016fa1050b6a4e767a</br>
 Link 5 : https://d0.awsstatic.com/whitepapers/saas-solutions-on-aws-final.pdf</br>
 Link 6 : https://aws-quickstart.s3.amazonaws.com/saas-identity-cognito/doc/saas-identity-and-isolation-with-cognito-on-the-aws-cloud.pdf</br>
-Link 7 : https://www.youtube.com/watch?v=mwQ5lipGTBI&t=781s (Title: AWS re:Invent 2018: [REPEAT 1] DeconstAll the components have been created individual Terraform Modules. Assuming Tenant category and applying mapping, we can control the resources creation and allocation.
-
-```hcl
-#----root/variables.tf----- Sample approach
-variable "tenantTier" {
-  description = "tenantTier: Tenant1 or Tenant2 or Tenant3 or Tenant4"
-}
-
-....
-
-variable "vpc_public_subnet_count" {
-  type        = "map"
-  description = "Subnet count"
-  default     = {
-    Tenant1  = "2"
-    Tenant2  = "4"
-    Tenant3  = "6"
-    Tenant4  = "8"
-  }
-}
-
-```ructing SaaS: Deep Dive into Building Multi-Tenant Solutions on AWS (ARC418-R1)</br>
+Link 7 : https://www.youtube.com/watch?v=mwQ5lipGTBI&t=781s (Title: AWS re:Invent 2018: [REPEAT 1] Deconstructing SaaS: Deep Dive into Building Multi-Tenant Solutions on AWS (ARC418-R1)</br>
 Link 8 : https://github.com/terraform-community-modules/tf_aws_ecs/blob/master/main.tf</br>
 Link 9 : https://learn.hashicorp.com/terraform/aws/lambda-api-gateway</br>
 Link 10 : http://blog.shippable.com/setup-a-container-cluster-on-aws-with-terraform-part-2-provision-a-cluster</br>
