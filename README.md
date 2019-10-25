@@ -103,7 +103,7 @@ Our solution Terraform modules:
 * 20_Flowlogs
 
 ### Billing
-Billing is a challenge in the Hybrid model, the way we are going work around is to make sure use particular tag for the infra created. We should force it with IAM rule "RequestTag" (AWS re:Invent 2018: [REPEAT 1] Become an IAM Policy Master in 60 Minutes or Less (SEC316-R1))
+Billing is a challenge in the Hybrid model, our work around is to make sure use particular tag for the infra created. We should force it with IAM rule "RequestTag" (AWS re:Invent 2018: [REPEAT 1] Become an IAM Policy Master in 60 Minutes or Less (SEC316-R1))
 
 ### Deployment & agility
 Whole project is made by breaking the AWS services into modules. Each service have their own corresponding Terraform module, which can be run independently or run at a shot. We can use "terraform.tfvars" for setting up the module to run the required service.
