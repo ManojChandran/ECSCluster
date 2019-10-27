@@ -1,12 +1,5 @@
-#--------------------root/variables.tf-----------------------------
+#--------------------10_networking/variables.tf----------------------
 
-variable "aws_region" {}
-
-variable "infra-stage" {
-  description = "infra-stage: PORD or TEST or DEV or SUPP"
-}
-
-#-------------networking---------------------------
 variable "vpc_cidr" {}
 variable "vpc_id" {
   default = ""
