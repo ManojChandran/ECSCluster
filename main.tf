@@ -16,7 +16,7 @@ provider "aws" {
   region = "${var.aws_region}"
 }
 
-module "network-module" {
+module "networkmodule" {
   source = "./modules/10_networking"
   vpc_cidr = "${var.vpc_cidr}"
   vpc_public_subnet_count = "${var.vpc_public_subnet_count}"
@@ -26,4 +26,9 @@ module "network-module" {
   vpc_rds_subnet_count = "${var.vpc_rds_subnet_count}"
   vpc_rds_cidrs = "${var.vpc_rds_cidrs}"
   flowlogs_bucket_name = "${var.flowlogs_bucket_name}"
+}
+
+module "ecscluster" {
+  source       = "./modules/20_ecscluster"
+  vpc_id       = "${module.networkmodule.VPC-ID}"
 }
