@@ -26,6 +26,7 @@ module "networkmodule" {
   vpc_rds_subnet_count = "${var.vpc_rds_subnet_count}"
   vpc_rds_cidrs = "${var.vpc_rds_cidrs}"
   flowlogs_bucket_name = "${var.flowlogs_bucket_name}"
+  private_subnets_alb  = "${var.private_subnets_alb}"
 }
 
 module "ecscluster" {

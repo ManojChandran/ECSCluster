@@ -32,3 +32,6 @@ variable "vpc_rds_cidrs" {
 variable "flowlogs_bucket_name" {
   default = ""
 }
+variable "private_subnets_alb" {
+  type = "list"
+}

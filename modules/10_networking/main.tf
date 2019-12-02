@@ -39,3 +39,9 @@ module "Flowlogs" {
   source       = "./modules/20_Flowlogs"
   vpc_id       = "${module.vpc_igw.vpc_id}"
 }
+
+module "applloadbalancer" {
+  source       = "./modules/14_ALBalancer"
+  vpc_id       = "${module.vpc_igw.vpc_id}"
+  private_subnets_alb      = "${module.PrivateSubnet.vpc_private_subnets}"
+}
